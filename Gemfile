@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'thin'
 gem 'therubyracer'
 gem 'execjs'
+gem 'pg'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
