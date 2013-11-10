@@ -4,7 +4,7 @@ MAINTAINER Alvin Lai <al@alvinlai.com>
 RUN apt-get install -y libpq-dev sqlite3 libsqlite3-dev
 RUN gem install bundler sqlite3-ruby --no-ri --no-rdoc
 
-ADD dockernotes /opt/dockernotes
+ADD . /opt/dockernotes
 
 WORKDIR /opt/dockernotes
 RUN bundle install
