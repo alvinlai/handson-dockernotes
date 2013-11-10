@@ -7,7 +7,6 @@ development:
   adapter: postgresql
   database: dockernotes_development
   username: docker
-  password: <%= ENV['DB_ENV_PG_PASSWORD'] %>
   host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
   port: <%= ENV['DB_PORT_5432_TCP_PORT'] %>
   pool: 5
@@ -20,7 +19,6 @@ test:
   adapter: postgresql
   database: dockernotes_test
   username: docker
-  password: <%= ENV['DB_ENV_PG_PASSWORD'] %>
   host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
   port: <%= ENV['DB_PORT_5432_TCP_PORT'] %>
   pool: 5
@@ -30,7 +28,6 @@ production:
   adapter: postgresql
   database: dockernotes_production
   username: docker
-  password: <%= ENV['DB_ENV_PG_PASSWORD'] %>
   host: <%= ENV['DB_PORT_5432_TCP_ADDR'] %>
   port: <%= ENV['DB_PORT_5432_TCP_PORT'] %>
   pool: 5
