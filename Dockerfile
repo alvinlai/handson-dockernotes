@@ -1,8 +1,8 @@
 FROM bmorearty/handson-ruby
 MAINTAINER Alvin Lai <al@alvinlai.com>
 
-RUN apt-get install -y libpq-dev sqlite3 libsqlite3-dev
-RUN gem install bundler sqlite3-ruby --no-ri --no-rdoc
+RUN apt-get install -y libpq-dev
+RUN gem install bundler --no-ri --no-rdoc
 
 ADD . /opt/dockernotes
 
