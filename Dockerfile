@@ -10,4 +10,6 @@ WORKDIR /opt/dockernotes
 RUN bundle install
 
 EXPOSE 3000
-CMD bundle exec rake db:create && bundle exec rake db:migrate && bundle exec rails s
+CMD bundle exec rake db:create && \
+    bundle exec rake db:migrate && \
+    bundle exec rails s
