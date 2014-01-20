@@ -1,4 +1,4 @@
-FROM bmorearty/handson-ruby
+FROM bmorearty/handson-sinatra
 MAINTAINER Alvin Lai <al@alvinlai.com>
 
 RUN apt-get install -y libpq-dev
