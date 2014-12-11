@@ -1,11 +1,9 @@
-FROM bmorearty/handson-sinatra
+FROM ruby
 MAINTAINER Alvin Lai <al@alvinlai.com>
 
-RUN apt-get install -y libpq-dev
-RUN gem install bundler --no-ri --no-rdoc
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
 
 ADD . /opt/dockernotes
-
 WORKDIR /opt/dockernotes
 RUN bundle install
 
